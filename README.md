@@ -1,2 +1,2 @@
 # BiBLE-Plugin
-VS Code Plugin for BiBLE-Atlas
+Hermes-Agent Plugin for BiBLE-Atlas
