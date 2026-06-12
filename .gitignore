@@ -205,9 +205,6 @@ cython_debug/
 .cursorindexingignore
 .cursor/
 
-docs/3rd/openclaw/
-
-3rd/openclaw/
 
 # Marimo
 marimo/_static/

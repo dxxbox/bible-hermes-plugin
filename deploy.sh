@@ -59,6 +59,11 @@ for arg in "$@"; do
 done
 
 # ── 前置检查 ──────────────────────────────────────────────────────────────────
+if [[ ! -f "$PLUGIN_SRC/pyproject.toml" ]] || [[ ! -f "$PLUGIN_SRC/plugin.yaml" ]]; then
+  err "deploy.sh 必须在 bible-hermes-plugin 仓库根目录中运行"
+  exit 1
+fi
+
 if [[ ! -d "$HERMES_HOME" ]]; then
   err "Hermes 目录不存在: $HERMES_HOME"
   exit 1
